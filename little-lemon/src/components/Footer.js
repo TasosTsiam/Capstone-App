@@ -4,7 +4,7 @@ import ReactLogo from '../logo.svg';
 
 function Footer() {
     return (
-        <div>
+        <div className="footer_container">
             <img src={ReactLogo} alt="React Logo"/>
 
             <table>

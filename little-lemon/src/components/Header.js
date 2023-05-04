@@ -3,7 +3,7 @@ import ReactLogo from '../logo.svg';
 
 function Header() {
     return (
-        <header>
+        <header className="header_container">
             <img src={ReactLogo} alt="React Logo"/>
         </header>
     );
