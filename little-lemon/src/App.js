@@ -8,9 +8,15 @@ import './mycss/style.css';
 function App() {
   return (
     <>
-      <div className="header_nav_container">
-        <Header/>
-        <Nav/>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-8 col-md-6">
+            <Header />
+          </div>
+          <div className="col-lg-4 col-md-6">
+            <Nav />
+          </div>
+        </div>
       </div>
       <Main/>
       <Footer/>

@@ -10,24 +10,20 @@ body {
   justify-content: space-between;
 }
 
-.header_nav_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.header_nav_container .header_container img {
+.header_container img {
   height: 100%;
 }
-.header_nav_container .nav_container ul {
+
+.nav_container ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
 }
-.header_nav_container .nav_container ul li {
+.nav_container ul li {
   padding: 0rem 1rem;
 }
-.header_nav_container .nav_container ul li a {
+.nav_container ul li a {
   text-decoration: none;
 }
 
