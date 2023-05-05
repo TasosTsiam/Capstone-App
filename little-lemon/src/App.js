@@ -9,7 +9,7 @@ import './mycss/style.css';
 function App() {
   return (
     <>
-      <div className="container" style = {{height:"100vh"}}>
+      <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12">
             <Header />
