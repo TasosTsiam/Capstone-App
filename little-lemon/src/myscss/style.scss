@@ -1,13 +1,9 @@
 html {
-    height: 100vh;
+  height: 100%;
 }
 
 body {
-    height: 100vh;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
 }
 
 .nav_container {
@@ -30,6 +26,10 @@ body {
             }
         }
     }
+}
+
+.main_container {
+    background-color: blue;
 }
 
 .table-footer {
