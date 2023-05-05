@@ -4,13 +4,13 @@ import React from 'react';
 function Nav() {
     return (
         <nav className="nav_container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Order Online</a></li>
-                <li><a href="#">Login</a></li>
+            <ul className="d-flex justify-content-center">
+                <li><a href="../../public/index.html">Home</a></li>
+                <li><a href="../../public/index.html">About</a></li>
+                <li><a href="../../public/index.html">Menu</a></li>
+                <li><a href="../../public/index.html">Reservations</a></li>
+                <li><a href="../../public/index.html">Order Online</a></li>
+                <li><a href="../../public/index.html">Login</a></li>
             </ul>
         </nav>
     );

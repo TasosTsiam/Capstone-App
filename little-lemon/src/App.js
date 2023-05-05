@@ -5,21 +5,26 @@ import  Main  from './components/Main';
 import  Footer  from './components/Footer';
 import './mycss/style.css';
 
+
 function App() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
-          <div className="col-lg-8 col-md-6">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <Header />
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-8 col-md-6 col-sm-12">
             <Nav />
+          </div>
+          <div className="col-12">
+            <Main/>
+          </div>
+          <div className="col-12">
+            <Footer/>
           </div>
         </div>
       </div>
-      <Main/>
-      <Footer/>
     </>
   );
 }
