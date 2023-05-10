@@ -8,26 +8,24 @@ import './mycss/style.css';
 
 function App() {
   return (
-    <>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <Header />
-          </div>
-          <div className="col-lg-8 col-md-6 col-sm-12">
-            <Nav />
-          </div>
+    <div className="container d-flex flex-column h-100">
+      <div className="row">
+        <div className="col-4 col-sm-12 col-md-6 col-lg-4">
+          <Header />
         </div>
-        <div className="row">
-          <div className="col-12">
-            <Main/>
-          </div>
-          <div className="col-12">
-            <Footer/>
-          </div>
+        <div className="col-8 col-sm-12 col-md-6 col-lg-8">
+          <Nav />
         </div>
       </div>
-    </>
+      <div className="row flex-grow-1">
+        <div className="col-12 align-self-center">
+          <Main/>
+        </div>
+        <div className="col-12 align-self-end">
+          <Footer/>
+        </div>
+      </div>
+    </div>
   );
 }
 
