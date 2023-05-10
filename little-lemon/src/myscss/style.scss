@@ -45,8 +45,12 @@ header {
     }
 }
 
-.main_container {
-    background-color: blue;
+.transparent-bg {
+    background-color: transparent;
+    font-weight: bold;
+    color: black;
+    box-sizing: border-box;
+    border: solid 0px transparent;
 }
 
 .table-footer {

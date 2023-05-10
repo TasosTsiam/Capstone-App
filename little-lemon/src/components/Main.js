@@ -13,39 +13,67 @@ function Main() {
                     <a href="../../public/index.html" className="btn btn-primary col-12 col-sm-3 col-md-2 col-lg-2 text-nowrap">Online Menu</a>
                 </div>
                 <div className="row">
-                <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div className="card h-100">
-                        <img src={image1} alt="Card" className="card-img-top"/>
-                        <div className="card-body">
-                            <h5 className="card-title">Card Title</h5>
-                            <p className="card-text">Card Description</p>
-                            <p className="card-text"><small className="text-muted">$ Price</small></p>
-                            <button className="btn btn-primary">Button</button>
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div className="card h-100">
+                            <img src={image1} alt="Card" className="card-img-top"/>
+                            <div className="card-body d-flex flex-column justify-content-between">
+                                <div className="row d-flex justify-content-between align-items-center">
+                                    <h5 className="card-title col-6 text-nowrap">Greek Salad</h5>
+                                    <p className="card-title col-6 text-nowrap">$ Price</p>
+                                </div>
+                                <p className="card-text">
+                                    The famous greek salad of crispy
+                                    lettuce, peppers, olives and our
+                                    Chicago style feta cheese, garnished
+                                    with crunchy garlic and rosemary croutons.
+                                </p>
+                                <button className="btn btn-primary transparent-bg col-12">
+                                    Order a Delivery
+                                    <span class="delivery-icon">&#x1F69A;</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div className="card h-100">
-                        <img src={ReactLogo} alt="React Logo" className="card-img-top"/>
-                        <div className="card-body">
-                            <h5 className="card-title">Card Title</h5>
-                            <p className="card-text">Card Description</p>
-                            <p className="card-text"><small className="text-muted">$ Price</small></p>
-                            <button className="btn btn-primary">Button</button>
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div className="card h-100">
+                            <img src={ReactLogo} alt="React Logo" className="card-img-top"/>
+                            <div className="card-body d-flex flex-column justify-content-between">
+                                <div className="row d-flex justify-content-between align-items-center">
+                                    <h5 className="card-title col-6 text-nowrap">Bruchetta</h5>
+                                    <p className="card-title col-6 text-nowrap">$ Price</p>
+                                </div>
+                                <p className="card-text">
+                                    Our Bruschetta is made from grilled bread
+                                    that has been smeared with garlic and seasoned
+                                    with salt and olive oil.
+                                </p>
+                                <button className="btn btn-primary transparent-bg col-12">
+                                    Order a Delivery
+                                    <span class="delivery-icon">&#x1F69A;</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div className="card h-100">
-                        <img src={image3} alt="Card" className="card-img-top"/>
-                        <div className="card-body">
-                            <h5 className="card-title">Card Title</h5>
-                            <p className="card-text">Card Description</p>
-                            <p className="card-text"><small className="text-muted">$ Price</small></p>
-                            <button className="btn btn-primary">Button</button>
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div className="card h-100">
+                            <img src={image3} alt="Card" className="card-img-top"/>
+                            <div className="card-body d-flex flex-column justify-content-between">
+                                <div className="row d-flex justify-content-between align-items-center">
+                                    <h5 className="card-title col-6 text-nowrap">Lemon Dessert</h5>
+                                    <p className="card-title col-6 text-nowrap">$ Price</p>
+                                </div>
+                                <p className="card-text">
+                                    This comes straight from grandmas recipe book,
+                                    every last ingredient has been sourced
+                                    and is as authentic as can be imagined.
+                                </p>
+                                <button className="btn btn-primary transparent-bg col-12">
+                                    Order a Delivery
+                                    <span class="delivery-icon">&#x1F69A;</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
