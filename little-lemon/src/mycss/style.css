@@ -16,6 +16,7 @@ header a {
   display: flex;
 }
 header a img {
+  height: 150%;
   align-self: center;
 }
 
@@ -33,17 +34,104 @@ header a img {
 }
 .nav_container ul li {
   padding: 0rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .nav_container ul li a {
   text-decoration: none;
+  color: #333333;
+}
+.nav_container ul li a:hover {
+  background-color: #333333;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: 0.1s ease-in-out;
 }
 
-.transparent-bg {
+.main_comp_section1 {
+  background-color: #6E6F6E;
+}
+.main_comp_section1 h1 {
+  color: #F4CE14;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.main_comp_section1 h3 {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.main_comp_section1 .card-img-top {
+  margin-left: -4rem;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+.main_comp_section1 p {
+  font-size: 1.12rem;
+}
+.main_comp_section1 a {
+  background-color: #F4CE14;
+  color: black;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 14px 0px;
+  border: solid 0px transparent;
+}
+.main_comp_section1 a:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.main_comp_section2 {
+  margin-top: 6rem;
+}
+.main_comp_section2 h2 {
+  color: #333333;
+  font-size: 3rem;
+}
+.main_comp_section2 a {
+  background-color: #F4CE14;
+  color: black;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 14px 0px;
+  border: solid 0px transparent;
+}
+.main_comp_section2 a:hover {
+  background-color: #333333;
+  color: white;
+}
+.main_comp_section2 .card {
+  padding: 0 !important;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.main_comp_section2 .card .card-img-top {
+  padding: 0px;
+}
+.main_comp_section2 .card .card-body {
+  background-color: #EDEFEE;
+}
+.main_comp_section2 .card .card-body .card_price {
+  color: orange;
+  font-weight: 500;
+}
+.main_comp_section2 .card .card-body .card-text {
+  color: #495E57;
+}
+.main_comp_section2 .card .card-body button {
   background-color: transparent;
   font-weight: bold;
   color: black;
   box-sizing: border-box;
   border: solid 0px transparent;
+}
+.main_comp_section2 .card .card-body button:hover {
+  background-color: #333333;
+  color: white;
 }
 
 .table-footer {
