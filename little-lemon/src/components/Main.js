@@ -3,6 +3,10 @@ import ReactLogo from '../bruchetta.svg';
 import image1 from '../greeksalad.jpg';
 import image3 from '../lemondessert.jpg';
 import image4 from '../restauranfood.jpg';
+import image5 from '../customer1.jpg';
+import image6 from '../customer2.jpg';
+import image7 from '../customer3.jpg';
+import image8 from '../customer4.jpg';
 
 
 function Main() {
@@ -41,8 +45,8 @@ function Main() {
                                 <img src={image1} alt="Card" className="card-img-top"/>
                                 <div className="card-body d-flex flex-column justify-content-between">
                                     <div className="row">
-                                        <h5 className="col-6 card-title text-nowrap">Greek Salad</h5>
-                                        <p className="col-6 card_price text-nowrap text-end">$ 12.99</p>
+                                        <h5 className="col-12 col-sm-6 col-md-6 col-lg-6 card-title text-nowrap">Greek Salad</h5>
+                                        <p className="col-12 col-sm-6 col-md-6 col-lg-6 card_price text-nowrap text-end">$ 12.99</p>
                                     </div>
                                     <p className="card-text">
                                         The famous greek salad of crispy lettuce, peppers, olives and our
@@ -60,8 +64,8 @@ function Main() {
                                 <img src={ReactLogo} alt="React Logo" className="card-img-top"/>
                                 <div className="card-body d-flex flex-column justify-content-between">
                                     <div className="row">
-                                        <h5 className="card-title col-6 text-nowrap">Bruchetta</h5>
-                                        <p className="card_price col-6 text-nowrap text-end">$ 5.99</p>
+                                        <h5 className="col-12 col-sm-6 col-md-6 col-lg-6 card-title text-nowrap">Bruchetta</h5>
+                                        <p className="col-12 col-sm-6 col-md-6 col-lg-6 card_price text-nowrap text-end">$ 5.99</p>
                                     </div>
                                     <p className="card-text">
                                         Our Bruschetta is made from grilled bread
@@ -80,8 +84,8 @@ function Main() {
                                 <img src={image3} alt="Card" className="card-img-top"/>
                                 <div className="card-body d-flex flex-column justify-content-between">
                                     <div className="row">
-                                        <h5 className="card-title col-6 text-nowrap">Lemon Dessert</h5>
-                                        <p className="card_price col-6 text-nowrap text-end">$ 5.00</p>
+                                        <h5 className="col-12 col-sm-6 col-md-6 col-lg-6 card-title text-nowrap">Lemon Dessert</h5>
+                                        <p className="col-12 col-sm-6 col-md-6 col-lg-6 card_price text-nowrap text-end">$ 5.00</p>
                                     </div>
                                     <p className="card-text">
                                         This comes straight from grandmas recipe book,
@@ -93,6 +97,68 @@ function Main() {
                                         <span class="delivery-icon">&#x1F69A;</span>
                                     </button>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="py-5 main_comp_section3">
+                <div className="container">
+                    <div className="row d-flex justify-content-between align-items-center">
+                        <div className="card col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div className="card-body">
+                                <h5 className="card-title">
+                                    <span className="rating-number">
+                                        <i className="fas fa-star"></i> 4.5
+                                    </span>
+                                </h5>
+                                <div className="row d-flex justify-content-between align-items-center">
+                                    <img src={image5} className="col-6 customer-image" alt="Customer"/>
+                                    <span className="col-6 customer-name">John Doe</span>
+                                </div>
+                                <p className="card-text">Great food and atmosphere. Highly recommend!</p>
+                            </div>
+                        </div>
+                        <div className="card col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div className="card-body">
+                                <h5 className="card-title">
+                                    <span className="rating-number">
+                                        <i className="fas fa-star"></i> 4.5
+                                    </span>
+                                </h5>
+                                <div className="row d-flex justify-content-between align-items-center">
+                                    <img src={image6} className="col-6 customer-image" alt="Customer"/>
+                                    <span className="col-6 customer-name">John Doe</span>
+                                </div>
+                                <p className="card-text">Great food and atmosphere. Highly recommend!</p>
+                            </div>
+                        </div>
+                        <div className="card col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div className="card-body">
+                                <h5 className="card-title">
+                                    <span className="rating-number">
+                                        <i className="fas fa-star"></i> 4.5
+                                    </span>
+                                </h5>
+                                <div className="row d-flex justify-content-between align-items-center">
+                                    <img src={image7} className="col-6 customer-image" alt="Customer"/>
+                                    <span className="col-6 customer-name">John Doe</span>
+                                </div>
+                                <p className="card-text">Great food and atmosphere. Highly recommend!</p>
+                            </div>
+                        </div>
+                        <div className="card col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div className="card-body">
+                                <h5 className="card-title">
+                                    <span className="rating-number">
+                                        <i className="fas fa-star"></i> 4.5
+                                    </span>
+                                </h5>
+                                <div className="row d-flex justify-content-between align-items-center">
+                                    <img src={image8} className="col-6 customer-image" alt="Customer"/>
+                                    <span className="col-6 customer-name">John Doe</span>
+                                </div>
+                                <p className="card-text">Great food and atmosphere. Highly recommend!</p>
                             </div>
                         </div>
                     </div>

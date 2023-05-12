@@ -46,7 +46,7 @@ header a img {
   color: white;
   box-sizing: border-box;
   border-radius: 5px;
-  transition: 0.1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .main_comp_section1 {
@@ -56,11 +56,23 @@ header a img {
   color: #F4CE14;
   font-size: 4rem;
   font-weight: 600;
+  /* media query for 'sm' display */
+}
+@media (max-width: 768px) {
+  .main_comp_section1 h1 {
+    font-size: 3rem;
+  }
 }
 .main_comp_section1 h3 {
   color: #FFFFFF;
   font-size: 2.5rem;
   font-weight: bold;
+  /* media query for 'sm' display */
+}
+@media (max-width: 768px) {
+  .main_comp_section1 h3 {
+    font-size: 2rem;
+  }
 }
 .main_comp_section1 .card-img-top {
   margin-left: -4rem;
@@ -69,6 +81,12 @@ header a img {
 }
 .main_comp_section1 p {
   font-size: 1.12rem;
+  /* media query for 'sm' display */
+}
+@media (max-width: 768px) {
+  .main_comp_section1 p {
+    font-size: 1rem;
+  }
 }
 .main_comp_section1 a {
   background-color: #F4CE14;
@@ -89,6 +107,12 @@ header a img {
 .main_comp_section2 h2 {
   color: #333333;
   font-size: 3rem;
+  /* media query for 'sm' display */
+}
+@media (max-width: 768px) {
+  .main_comp_section2 h2 {
+    font-size: 2.2rem;
+  }
 }
 .main_comp_section2 a {
   background-color: #F4CE14;
@@ -132,6 +156,10 @@ header a img {
 .main_comp_section2 .card .card-body button:hover {
   background-color: #333333;
   color: white;
+}
+
+.main_comp_section3 {
+  background-color: #D9D9D9;
 }
 
 .table-footer {
