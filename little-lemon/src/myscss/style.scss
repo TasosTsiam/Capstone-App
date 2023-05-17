@@ -20,6 +20,10 @@ header {
         img {
             height: 150%;
             align-self: center;
+
+            @media (max-width: 576px) {
+                height: 100%;
+            }
         }
     }
 }
@@ -54,6 +58,9 @@ header {
                 transition: 0.2s ease-in-out;
             }
         }
+    }
+
+    @media (max-width: 991px) {
     }
 }
 
