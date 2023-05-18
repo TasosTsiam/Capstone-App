@@ -4,63 +4,64 @@ html, #root {
 
 body {
     height: 100%;
+    background-color: rgb(234, 238, 230);
 
     * {
         padding: 0.2rem;
         }
 }
 
-header {
-    height: 100%;
+.navbar {
+    .container-fluid {
+        @media (max-width: 991px) {
+            justify-content: space-between !important;
+        }
 
-    a {
-        display: flex;
+        a.navbar-brand {
+            display: flex;
+            justify-content: center;
 
-
-        img {
-            height: 150%;
-            align-self: center;
-
-            @media (max-width: 576px) {
-                height: 100%;
+            @media (max-width: 991px) {
+                justify-content: start !important;
             }
         }
-    }
-}
 
-.nav_container {
-    height: 100%;
+        .navbar-collapse {
+            justify-content: center;
+            .navbar-nav {
 
-    ul {
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        white-space: nowrap;
+                .nav-link {
+                    color: #333333;
+                    padding: 1rem 1.5rem;
+                    border-radius: 7px;
+                }
 
-        li {
-            padding: 0rem 0.5rem;
-            font-size: 1.2rem;
-            font-weight: 500;
+                .nav-link:hover {
+                    background-color: #333333;
+                    color: white;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    transition: 0.2s ease-in-out;
+                }
 
-            a {
-                text-decoration: none;
-                color: #333333;
-            }
+                @media (max-width: 991px) {
+                    background-color: #333333;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
-            a:hover {
-                background-color: #333333;
-                color: white;
-                box-sizing: border-box;
-                border-radius: 5px;
-                transition: 0.2s ease-in-out;
+                    .nav-link {
+                        color: #F4CE14;
+                    }
+
+                    .nav-link:hover {
+                        text-shadow: 1px 1px 4px #F4CE14;
+                        border-bottom: 1px solid #F4CE14;
+                        box-shadow: 1px 1px 4px #F4CE14;
+                    }
+                }
             }
         }
-    }
-
-    @media (max-width: 991px) {
     }
 }
 

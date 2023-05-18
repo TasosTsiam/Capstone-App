@@ -1,40 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import ReactLogo from '../logo.svg';
 
 function Nav() {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 992);
-        };
-
-        handleResize();
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
     return (
-        <nav className="d-flex justify-content-center nav_container">
-            {isMobile ? (
-                <div className="d-flex justify-content-center nav_container">
-                    <button className="menu-button">Menu</button>
-                </div>
-            ) : (
-                <div>
-                    <ul>
-                        <li><a href="../../public/index.html">Home</a></li>
-                        <li><a href="../../public/index.html">About</a></li>
-                        <li><a href="../../public/index.html">Menu</a></li>
-                        <li><a href="../../public/index.html">Reservations</a></li>
-                        <li><a href="../../public/index.html">Order Online</a></li>
-                        <li><a href="../../public/index.html">Login</a></li>
+        <nav className="navbar navbar-expand-lg">
+            <div className="container-fluid d-flex justify-content-center">
+                <a className="navbar-brand col-6 col-lg-4" href="/">
+                    <img src={ReactLogo} alt="React Logo"/>
+                </a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse col-6 col-lg-8" id="navbarTogglerDemo02">
+                    <ul className="navbar-nav mb-2 mb-lg-0 text-nowrap">
+                        <li className="nav-item"><a className="nav-link" aria-current="page" href="../../public/index.html">Home</a></li>
+                        <li className="nav-item"><a className="nav-link" aria-current="page" href="../../public/index.html">About</a></li>
+                        <li className="nav-item"><a className="nav-link" aria-current="page" href="../../public/index.html">Menu</a></li>
+                        <li className="nav-item"><a className="nav-link" aria-current="page" href="../../public/index.html">Reservations</a></li>
+                        <li className="nav-item"><a className="nav-link" aria-current="page" href="../../public/index.html">Order Online</a></li>
+                        <li className="nav-item"><a className="nav-link" aria-current="page" href="../../public/index.html">Login</a></li>
                     </ul>
                 </div>
-            )}
+            </div>
         </nav>
     );
 }
