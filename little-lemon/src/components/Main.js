@@ -14,8 +14,8 @@ function Main() {
         <div>
             <section className="py-5 main_comp_section1">
                 <div className="container">
-                    <div className="row d-flex justify-content-between align-items-center">
-                        <div className="col-12 col-md-6 col-lg-6">
+                    <div className="row d-flex justify-content-between align-items-center s1-row-container">
+                        <div className="col-12 col-sm-6 col-md-6 col-lg-6 s1-card-container">
                             <h1 className="text-nowrap">Little Lemon</h1>
                             <h3 className="text-nowrap">Chicago</h3>
                             <p className="card-text text-wrap" style={{width: "15rem"}}>
@@ -25,10 +25,10 @@ function Main() {
                                 recipes served with a modern
                                 twist.
                             </p>
-                            <a href="../../public/index.html" className="btn btn-primary col-12 col-sm-3 col-md-3 col-lg-3 text-nowrap">Reserve a Table</a>
+                            <a href="../../public/index.html" className="btn btn-primary col-8 col-sm-6 col-md-6 col-lg-4 text-nowrap">Reserve a Table</a>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-6 mb-4" style={{ width: '400px', height: '400px'}}>
-                            <img src={image4} alt="Card" className="card-img-top" style={{ width: '135%', height: '135%', objectFit: 'cover' }}/>
+                        <div className="col-12 col-sm-6 col-md-6 col-lg-6 mb-4 s1-img-container" style={{ width: '380px', height: '380px'}}>
+                            <img src={image4} alt="Card" className="s1-img" style={{ width: '130%', height: '130%', objectFit: 'cover' }}/>
                         </div>
                     </div>
                 </div>
