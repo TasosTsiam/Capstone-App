@@ -60,6 +60,9 @@ body {
   .main_comp_section1 .s1-row-container {
     flex-direction: column;
   }
+  .main_comp_section1 .s1-row-container .s1-card-container {
+    margin-bottom: 2rem;
+  }
 }
 .main_comp_section1 h1 {
   color: #F4CE14;
@@ -125,6 +128,7 @@ body {
   box-sizing: border-box;
   padding: 14px 0px;
   border: solid 0px transparent;
+  box-shadow: 2px 2px 5px 2px #333333;
 }
 .main_comp_section1 a:hover {
   background-color: #333333;
@@ -164,6 +168,7 @@ body {
   margin-left: -4rem;
   box-sizing: border-box;
   border-radius: 16px;
+  box-shadow: 2px 2px 5px 2px #333333;
 }
 
 .main_comp_section2 {
@@ -218,6 +223,7 @@ body {
   box-sizing: border-box;
   padding: 14px 0px;
   border: solid 0px transparent;
+  box-shadow: 2px 2px 5px 2px #333333;
 }
 .main_comp_section2 a:hover {
   background-color: #333333;
@@ -229,6 +235,7 @@ body {
   border-top-right-radius: 16px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  box-shadow: 5px 5px 15px 3px #333333;
 }
 .main_comp_section2 .card .card-img-top {
   padding: 0px;
@@ -253,6 +260,9 @@ body {
 .main_comp_section2 .card .card-body button:hover {
   background-color: #333333;
   color: white;
+}
+.main_comp_section2 .card:hover {
+  box-shadow: 5px 5px 15px 3px gold;
 }
 
 .main_comp_section3 {
@@ -446,6 +456,57 @@ body {
   }
 }
 
-.table-footer {
+.footer-container .table-footer {
   height: 100%;
+}
+.footer-container .table-footer table, .footer-container .table-footer th, .footer-container .table-footer tr, .footer-container .table-footer td {
+  border: none;
+}
+.footer-container .table-footer table a, .footer-container .table-footer th a, .footer-container .table-footer tr a, .footer-container .table-footer td a {
+  text-decoration: none;
+  color: #333333;
+}
+.footer-container .table-footer table a:hover, .footer-container .table-footer th a:hover, .footer-container .table-footer tr a:hover, .footer-container .table-footer td a:hover {
+  border-bottom: 1px solid #333333;
+}
+.footer-container .table-footer table .media-icon:hover, .footer-container .table-footer th .media-icon:hover, .footer-container .table-footer tr .media-icon:hover, .footer-container .table-footer td .media-icon:hover {
+  cursor: pointer;
+}
+.footer-container .table-footer th {
+  color: #495E57;
+  font-size: 0.9rem;
+}
+.footer-container .table-footer td {
+  font-size: 0.7rem;
+}
+.footer-container .copyright-logo p {
+  margin-bottom: 0 !important;
+  color: blue;
+}
+@media (min-width: 150px) and (max-width: 575.98px) {
+  .footer-container .copyright-logo img {
+    height: 60%;
+    width: 60%;
+  }
+  .footer-container .copyright-logo p {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer-container .copyright-logo img {
+    height: 50%;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-container .copyright-logo img {
+    height: 40%;
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .footer-container .copyright-logo img {
+    height: 40%;
+    width: 40%;
+  }
 }/*# sourceMappingURL=style.css.map */

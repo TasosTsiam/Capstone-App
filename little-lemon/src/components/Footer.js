@@ -1,41 +1,60 @@
 import React from 'react';
 import ReactLogo from '../logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
 function Footer() {
     return (
         <footer>
-            <div className="row">
-                <div className="col-12 col-md-3 col-lg-6 d-flex justify-content-center">
-                    <img src={ReactLogo} alt="React Logo"/>
-                </div>
-                <div className="col-12 col-md-9 col-lg-6 d-flex justify-content-center">
-                    <table className="table table-bordered table-hover table-footer">
-                        <thead>
-                            <tr>
-                            <th>Doormat Navigation</th>
-                            <th>Contact</th>
-                            <th>Social Media links</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Link 1</td>
-                                <td>Address 1</td>
-                                <td>Social Media Link 1</td>
-                            </tr>
-                            <tr>
-                                <td>Link 2</td>
-                                <td>Address 2</td>
-                                <td>Social Media Link 2</td>
-                            </tr>
-                            <tr>
-                                <td>Link 3</td>
-                                <td>Address 3</td>
-                                <td>Social Media Link 3</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div className="container footer-container">
+                <div className="row">
+                    <div className="col-12 d-flex justify-content-center">
+                        <table className="table table-footer">
+                            <thead>
+                                <tr>
+                                    <th>Doormat Navigation</th>
+                                    <th>Contact</th>
+                                    <th>Social Media links</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="../../public/index.html">Home</a></td>
+                                    <td>Random Street 21</td>
+                                    <td className="media-icon"><FontAwesomeIcon icon={faFacebookF} /></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="../../public/index.html">About</a></td>
+                                    <td>863 5715 559 - <FontAwesomeIcon icon={faPhone} /></td>
+                                    <td className="media-icon"><FontAwesomeIcon icon={faInstagram} /></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="../../public/index.html">Menu</a></td>
+                                    <td>example@hotmail.com</td>
+                                    <td className="media-icon"><FontAwesomeIcon icon={faTwitter} /></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="../../public/index.html">Reservations</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="../../public/index.html">Order Online</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="../../public/index.html">Login</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="col-12 d-flex justify-content-evenly copyright-logo">
+                        <img src={ReactLogo} alt="React Logo" className="d-flex align-self-center col-6"/>
+                        <div className="d-flex justify-content-center align-items-center col-6">
+                            <p className="text-nowrap">© 2023 Little Lemon</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
