@@ -7,6 +7,8 @@ import image5 from '../customer1.jpg';
 import image6 from '../customer2.jpg';
 import image7 from '../customer3.jpg';
 import image8 from '../customer4.jpg';
+import image9 from '../restaurant.jpg';
+import image10 from '../mario-and-adrian.jpg';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -163,6 +165,31 @@ function Main() {
                                 </div>
                                 <p className="card-text">"Great food and atmosphere. Highly recommend!"</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="py-5 main_comp_section4">
+                <div className="container">
+                    <div className="row d-flex justify-content-center align-items-center s4-row-container">
+                        <div className="col-12 col-sm-6 col-md-6 col-lg-6 s4-card-container">
+                            <h1 className="text-nowrap">Little Lemon</h1>
+                            <h4 className="text-nowrap">Chicago</h4>
+                            <p className="card-text text-wrap" style={{width: "15rem"}}>
+                                Amet minim mollit non deserunt
+                                ullamco est sit aliqua dolor do amet
+                                sint. Velit officia consequat duis enim
+                                velit mollit. Exercitation veniam
+                                consequat sunt nostrud amet.
+                                Amet minim mollit non deserunt
+                                ullamco est sit aliqua dolor do amet
+                                sint. Velit officia consequat duis enim
+                                velit mollit.
+                            </p>
+                        </div>
+                        <div className="col-12 col-sm-6 col-md-6 col-lg-6 mb-4 s4-img-container" style={{ width: '230px', height: '300px', position: 'relative'}}>
+                            <img src={image9} alt="Card" className="s4-img img1"/>
+                            <img src={image10} alt="Card" className="s4-img img2"/>
                         </div>
                     </div>
                 </div>
