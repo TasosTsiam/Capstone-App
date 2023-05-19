@@ -10,7 +10,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 function Footer() {
     return (
         <footer>
-            <div className="container footer-container">
+            <div className="container-fluid footer-container">
                 <div className="row">
                     <div className="col-12 d-flex justify-content-center">
                         <table className="table table-footer">

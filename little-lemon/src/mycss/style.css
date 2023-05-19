@@ -456,6 +456,9 @@ body {
   }
 }
 
+.footer-container {
+  background-color: #333333;
+}
 .footer-container .table-footer {
   height: 100%;
 }
@@ -464,20 +467,26 @@ body {
 }
 .footer-container .table-footer table a, .footer-container .table-footer th a, .footer-container .table-footer tr a, .footer-container .table-footer td a {
   text-decoration: none;
-  color: #333333;
+  color: #F4CE14;
 }
 .footer-container .table-footer table a:hover, .footer-container .table-footer th a:hover, .footer-container .table-footer tr a:hover, .footer-container .table-footer td a:hover {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #F4CE14;
 }
 .footer-container .table-footer table .media-icon:hover, .footer-container .table-footer th .media-icon:hover, .footer-container .table-footer tr .media-icon:hover, .footer-container .table-footer td .media-icon:hover {
   cursor: pointer;
 }
 .footer-container .table-footer th {
-  color: #495E57;
+  color: #FFFFFF;
   font-size: 0.9rem;
 }
 .footer-container .table-footer td {
-  font-size: 0.7rem;
+  font-size: 1rem;
+  color: #F4CE14;
+}
+@media (min-width: 150px) and (max-width: 575.98px) {
+  .footer-container .table-footer td {
+    font-size: 0.7rem;
+  }
 }
 .footer-container .copyright-logo p {
   margin-bottom: 0 !important;

@@ -494,6 +494,8 @@ body {
 }
 
 .footer-container {
+
+    background-color: #333333;
     .table-footer {
         height: 100%;
 
@@ -502,11 +504,11 @@ body {
 
             a {
                 text-decoration: none;
-                color: #333333;
+                color: #F4CE14;
             }
 
             a:hover {
-                border-bottom: 1px solid #333333;
+                border-bottom: 1px solid #F4CE14;
             }
 
             .media-icon:hover {
@@ -515,12 +517,17 @@ body {
         }
 
         th {
-            color: #495E57;
+            color: #FFFFFF;
             font-size: 0.9rem;
         }
 
         td {
-            font-size: 0.7rem;
+            font-size: 1rem;
+            color: #F4CE14;
+
+            @media (min-width: 150px) and (max-width: 575.98px) {
+                font-size: 0.7rem;
+            }
         }
     }
 
