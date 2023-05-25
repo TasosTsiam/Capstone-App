@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactLogo from '../bruchetta.svg';
 import image1 from '../greeksalad.jpg';
 import image3 from '../lemondessert.jpg';
@@ -12,11 +12,23 @@ import image10 from '../mario-and-adrian.jpg';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import BookingForm from './BookingForm';
 
 
 function Main() {
+
+    const [availableTimes, setAvailableTimes] = useState([
+        '17:00',
+        '18:00',
+        '19:00',
+        '20:00',
+        '21:00',
+        '22:00'
+    ]);
+
     return (
         <div>
+            <BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />
             <section className="py-5 main_comp_section1">
                 <div className="container">
                     <div className="row d-flex justify-content-between align-items-center s1-row-container">
