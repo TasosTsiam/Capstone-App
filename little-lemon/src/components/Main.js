@@ -11,6 +11,7 @@ import image9 from '../restaurant.jpg';
 import image10 from '../mario-and-adrian.jpg';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 
 function Main() {
@@ -29,7 +30,9 @@ function Main() {
                                 recipes served with a modern
                                 twist.
                             </p>
-                            <a href="../../public/index.html" className="btn btn-primary col-8 col-sm-6 col-md-6 col-lg-4 text-nowrap">Reserve a Table</a>
+                            <Link to="/reservations" className="btn btn-primary col-8 col-sm-6 col-md-6 col-lg-4 text-nowrap">
+                                Reserve a Table
+                            </Link>
                         </div>
                         <div className="col-12 col-sm-6 col-md-6 col-lg-6 mb-4 s1-img-container" style={{ width: '380px', height: '380px'}}>
                             <img src={image4} alt="Card" className="s1-img" style={{ width: '130%', height: '130%', objectFit: 'cover' }}/>

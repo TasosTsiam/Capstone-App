@@ -5,6 +5,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -23,28 +24,28 @@ function Footer() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><a href="../../public/index.html">Home</a></td>
+                                    <td><Link to="/main">Home</Link></td>
                                     <td>Random Street 21</td>
                                     <td className="media-icon"><FontAwesomeIcon icon={faFacebookF} /></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="../../public/index.html">About</a></td>
+                                    <td><Link to="/main">About</Link></td>
                                     <td>863 5715 559 - <FontAwesomeIcon icon={faPhone} /></td>
                                     <td className="media-icon"><FontAwesomeIcon icon={faInstagram} /></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="../../public/index.html">Menu</a></td>
+                                    <td><Link to="/main">Menu</Link></td>
                                     <td>example@hotmail.com</td>
                                     <td className="media-icon"><FontAwesomeIcon icon={faTwitter} /></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="../../public/index.html">Reservations</a></td>
+                                    <td><Link to="/reservations">Reservations</Link></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="../../public/index.html">Order Online</a></td>
+                                    <td><Link to="/main">Order Online</Link></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="../../public/index.html">Login</a></td>
+                                    <td><Link to="/main">Login</Link></td>
                                 </tr>
                             </tbody>
                         </table>
