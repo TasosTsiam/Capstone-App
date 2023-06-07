@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useReducer} from 'react';
 import ReactLogo from '../bruchetta.svg';
 import image1 from '../greeksalad.jpg';
 import image3 from '../lemondessert.jpg';
@@ -17,18 +17,29 @@ import BookingForm from './BookingForm';
 
 function Main() {
 
-    const [availableTimes, setAvailableTimes] = useState([
-        '17:00',
-        '18:00',
-        '19:00',
-        '20:00',
-        '21:00',
-        '22:00'
-    ]);
+    const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
+
+    const showBookingForm = false;
+
+    function initializeTimes() {
+        return [
+            '17:00',
+            '18:00',
+            '19:00',
+            '20:00',
+            '21:00',
+            '22:00'
+        ];
+    }
+
+    function updateTimes(initializeTimes, action) {
+        if (action.type === "update_times") return {initializeTimes}
+        else {return initializeTimes();}
+    }
 
     return (
         <div>
-            <BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />
+            {showBookingForm && <BookingForm availableTimes={availableTimes} dispatch={dispatch} />}
             <section className="py-5 main_comp_section1">
                 <div className="container">
                     <div className="row d-flex justify-content-between align-items-center s1-row-container">
@@ -56,7 +67,7 @@ function Main() {
                 <div className="container">
                     <div className="row d-flex justify-content-between align-items-center s2-row-1">
                         <h2 className="col-12 col-sm-6 col-md-6 col-lg-6 text-nowrap">This week's <span>specials!</span></h2>
-                        <a href="../../public/index.html" className="btn btn-primary col-6 col-sm-3 col-md-2 col-lg-2 text-nowrap">Online Menu</a>
+                        <Link to="/main" className="btn btn-primary col-6 col-sm-3 col-md-2 col-lg-2 text-nowrap">Online Menu</Link>
                     </div>
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
