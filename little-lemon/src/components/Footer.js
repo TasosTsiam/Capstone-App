@@ -24,17 +24,17 @@ function Footer() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><Link to="/main">Home</Link></td>
+                                    <td><Link to="/homepage">Home</Link></td>
                                     <td>Random Street 21</td>
                                     <td className="media-icon"><FontAwesomeIcon icon={faFacebookF} /></td>
                                 </tr>
                                 <tr>
-                                    <td><Link to="/main">About</Link></td>
+                                    <td><Link to="/homepage">About</Link></td>
                                     <td>863 5715 559 - <FontAwesomeIcon icon={faPhone} /></td>
                                     <td className="media-icon"><FontAwesomeIcon icon={faInstagram} /></td>
                                 </tr>
                                 <tr>
-                                    <td><Link to="/main">Menu</Link></td>
+                                    <td><Link to="/homepage">Menu</Link></td>
                                     <td>example@hotmail.com</td>
                                     <td className="media-icon"><FontAwesomeIcon icon={faTwitter} /></td>
                                 </tr>
@@ -42,10 +42,10 @@ function Footer() {
                                     <td><Link to="/reservations">Reservations</Link></td>
                                 </tr>
                                 <tr>
-                                    <td><Link to="/main">Order Online</Link></td>
+                                    <td><Link to="/homepage">Order Online</Link></td>
                                 </tr>
                                 <tr>
-                                    <td><Link to="/main">Login</Link></td>
+                                    <td><Link to="/homepage">Login</Link></td>
                                 </tr>
                             </tbody>
                         </table>

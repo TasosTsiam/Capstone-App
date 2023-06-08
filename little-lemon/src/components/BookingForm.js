@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 function BookingForm({ availableTimes = [], dispatch }) {
     const [date, setDate] = useState('');
