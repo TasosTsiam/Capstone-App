@@ -3,8 +3,9 @@
 import React, {useReducer} from 'react';
 import Homepage from './Homepage';
 import  BookingPage  from './BookingPage';
-import { Routes, Route } from 'react-router-dom';
-import { fetchAPI } from './Api';
+import ConfirmedBooking from './ConfirmedBooking';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import { fetchAPI, submitAPI } from './Api';
 
 
 export function initializeTimes() {
@@ -25,11 +26,22 @@ export function updateTimes(state, action) {
 function Main() {
 
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
+    const navigate = useNavigate();
+
+  const submitForm = (formData) => {
+    const isBookingSubmitted = submitAPI(formData);
+    if (isBookingSubmitted) {
+      navigate('/confirmed');
+    } else {
+      // Handle submission error
+    }
+  };
 
     return (
         <Routes>
             <Route path="/homepage" element={<Homepage />} />
-            <Route path="/reservations" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} />} />
+            <Route path="/reservations" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm}/>} />
+            <Route path="/confirmed" element={<ConfirmedBooking />} />
         </Routes>
     );
 }
