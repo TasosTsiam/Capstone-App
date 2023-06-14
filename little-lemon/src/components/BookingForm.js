@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 function BookingForm({ availableTimes = [], dispatch }) {
-    const [date, setDate] = useState('');
+    const [date, setDate] = useState(new Date());
     const [time, setTime] = useState('17:00');
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState('Birthday');
@@ -14,15 +14,15 @@ function BookingForm({ availableTimes = [], dispatch }) {
     };
 
     const handleDateChange = (e) => {
-        const selectedDate = e.target.value;
+        const selectedDate = new Date(e.target.value); // Convert the value to a Date object
         setDate(selectedDate);
-        dispatch({type: "update_times"}); // Dispatch the selected date to update available times
-      };
+        dispatch({ type: 'update_times', date: selectedDate }); // Dispatch the selected date to update available times
+    };
 
     return (
         <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleFormSubmit}>
             <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" value={date} onChange={handleDateChange} />
+            <input type="date" id="res-date" value={date.toISOString().split('T')[0]} onChange={handleDateChange} />
 
             <label htmlFor="res-time">Choose time</label>
             <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>

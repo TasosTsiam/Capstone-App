@@ -1,25 +1,22 @@
+/* eslint-disable no-undef */
+
 import React, {useReducer} from 'react';
 import Homepage from './Homepage';
 import  BookingPage  from './BookingPage';
 import { Routes, Route } from 'react-router-dom';
+import { fetchAPI } from './Api';
 
 
 export function initializeTimes() {
-    return [
-        '17:00',
-        '18:00',
-        '19:00',
-        '20:00',
-        '21:00',
-        '22:00'
-    ];
+    const today = new Date(); // Get today's date
+    return fetchAPI(today); // Use fetchAPI function from the API library to fetch available times for today's date
 }
 
 export function updateTimes(state, action) {
     console.log(action)
     switch (action.type) {
         case 'update_times':
-            return initializeTimes();
+            return fetchAPI(action.date); // Use fetchAPI function from the API library to fetch available times for the selected date
         default:
             return state;
     }
@@ -38,3 +35,5 @@ function Main() {
 }
 
 export default Main;
+
+/* eslint-enable no-undef */
