@@ -2,9 +2,11 @@ import React, {useState} from 'react';
 
 function BookingForm({ availableTimes = [], dispatch, submitForm }) {
     const [date, setDate] = useState(new Date());
-    const [time, setTime] = useState('17:00');
+    const [time, setTime] = useState('');
     const [guests, setGuests] = useState(1);
-    const [occasion, setOccasion] = useState('Birthday');
+    const [occasion, setOccasion] = useState('');
+
+    const [initialDate] = useState(new Date());
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
@@ -13,17 +15,35 @@ function BookingForm({ availableTimes = [], dispatch, submitForm }) {
 
     const handleDateChange = (e) => {
         const selectedDate = new Date(e.target.value); // Convert the value to a Date object
-        setDate(selectedDate);
-        dispatch({ type: 'update_times', date: selectedDate }); // Dispatch the selected date to update available times
+        if (selectedDate > initialDate || selectedDate.toDateString() === initialDate.toDateString()) {
+            setDate(selectedDate);
+            setDate(selectedDate);
+            dispatch({ type: 'update_times', date: selectedDate });
+        } // Dispatch the selected date to update available times
     };
 
     return (
         <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleFormSubmit}>
             <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" value={date.toISOString().split('T')[0]} onChange={handleDateChange} />
+            <input
+                type="date"
+                id="res-date"
+                required
+                value={date.toISOString().split('T')[0]}
+                onChange={handleDateChange}
+                aria-label="Choose date"
+                aria-required="true"
+                aria-describedby="date-error"
+            />
 
             <label htmlFor="res-time">Choose time</label>
-            <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>
+            <select
+                id="res-time"
+                required
+                value={time}
+                aria-label="Choose time"
+                aria-required="true"
+                onChange={(e) => setTime(e.target.value)}>
                 {availableTimes.map((availableTime) => (
                     <option key={availableTime} value={availableTime}>
                         {availableTime}
@@ -32,13 +52,39 @@ function BookingForm({ availableTimes = [], dispatch, submitForm }) {
             </select>
 
             <label htmlFor="guests">Number of guests</label>
-            <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={(e) => setGuests(e.target.value)} />
-                <label htmlFor="occasion">Occasion</label>
-                <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
-                    <option value="Birthday">Birthday</option>
-                    <option value="Anniversary">Anniversary</option>
-                </select>
-            <input type="submit" value="Make Your reservation" />
+            <input
+                type="number"
+                placeholder="1"
+                min="1"
+                max="10"
+                id="guests"
+                required
+                aria-label="Number of guests"
+                aria-required="true"
+                value={guests}
+                onChange={(e) => {
+                    const inputValue = e.target.value;
+                    if (!isNaN(inputValue)) {
+                        setGuests(inputValue);
+                    }
+                }}
+            />
+            <label htmlFor="occasion">Occasion</label>
+            <select
+                id="occasion"
+                required
+                value={occasion}
+                aria-label="Occasion"
+                aria-required="true"
+                onChange={(e) => setOccasion(e.target.value)}>
+                <option disabled hidden value="">Select an occasion</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Anniversary">Anniversary</option>
+            </select>
+            <input
+                type="submit"
+                value="Make Your reservation"
+            />
         </form>
     );
 }

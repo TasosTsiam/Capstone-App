@@ -14,7 +14,7 @@ function Footer() {
             <div className="container-fluid footer-container">
                 <div className="row">
                     <div className="col-12 d-flex justify-content-center">
-                        <table className="table table-footer">
+                        <table className="table table-footer" summary="Doormat Navigation, Contact, and Social Media links">
                             <thead>
                                 <tr>
                                     <th>Doormat Navigation</th>
@@ -25,18 +25,18 @@ function Footer() {
                             <tbody>
                                 <tr>
                                     <td><Link to="/homepage">Home</Link></td>
-                                    <td>Random Street 21</td>
-                                    <td className="media-icon"><FontAwesomeIcon icon={faFacebookF} /></td>
+                                    <td aria-label="Contact address">Random Street 21</td>
+                                    <td className="media-icon"><FontAwesomeIcon icon={faFacebookF} aria-label="Facebook" /></td>
                                 </tr>
                                 <tr>
                                     <td><Link to="/homepage">About</Link></td>
-                                    <td>863 5715 559 - <FontAwesomeIcon icon={faPhone} /></td>
-                                    <td className="media-icon"><FontAwesomeIcon icon={faInstagram} /></td>
+                                    <td aria-label="Phone number">863 5715 559 - <FontAwesomeIcon icon={faPhone} /></td>
+                                    <td className="media-icon"><FontAwesomeIcon icon={faInstagram} aria-label="Instagram" /></td>
                                 </tr>
                                 <tr>
                                     <td><Link to="/homepage">Menu</Link></td>
-                                    <td>example@hotmail.com</td>
-                                    <td className="media-icon"><FontAwesomeIcon icon={faTwitter} /></td>
+                                    <td aria-label="email">example@hotmail.com</td>
+                                    <td className="media-icon"><FontAwesomeIcon icon={faTwitter} aria-label="Twitter" /></td>
                                 </tr>
                                 <tr>
                                     <td><Link to="/reservations">Reservations</Link></td>

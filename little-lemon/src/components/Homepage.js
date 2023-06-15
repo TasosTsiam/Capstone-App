@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 function Homepage() {
     return (
         <div>
-            <section className="py-5 main_comp_section1">
+            <section className="py-5 homepage_comp_section1">
                 <div className="container">
                     <div className="row d-flex justify-content-between align-items-center s1-row-container">
                         <div className="col-12 col-sm-6 col-md-6 col-lg-6 s1-card-container">
@@ -40,7 +40,7 @@ function Homepage() {
                     </div>
                 </div>
             </section>
-            <section className="py-5 main_comp_section2">
+            <section className="py-5 homepage_comp_section2">
                 <div className="container">
                     <div className="row d-flex justify-content-between align-items-center s2-row-1">
                         <h2 className="col-12 col-sm-6 col-md-6 col-lg-6 text-nowrap">This week's <span>specials!</span></h2>
@@ -60,7 +60,7 @@ function Homepage() {
                                         Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.
                                     </p>
                                     <button className="btn btn-primary col-12">
-                                        Order a Delivery
+                                        Order Greek Salad
                                         <span className="delivery-icon">&#x1F69A;</span>
                                     </button>
                                 </div>
@@ -80,7 +80,7 @@ function Homepage() {
                                         with salt and olive oil.
                                     </p>
                                     <button className="btn btn-primary col-12">
-                                        Order a Delivery
+                                        Order Bruchetta
                                         <span className="delivery-icon">&#x1F69A;</span>
                                     </button>
                                 </div>
@@ -100,7 +100,7 @@ function Homepage() {
                                         and is as authentic as can be imagined.
                                     </p>
                                     <button className="btn btn-primary col-12">
-                                        Order a Delivery
+                                        Order Lemon Dessert
                                         <span className="delivery-icon">&#x1F69A;</span>
                                     </button>
                                 </div>
@@ -109,7 +109,7 @@ function Homepage() {
                     </div>
                 </div>
             </section>
-            <section className="py-5 main_comp_section3">
+            <section className="py-5 homepage_comp_section3">
                 <div className="container">
                     <div className="testimonial">Customer Ratings</div>
                     <div className="row d-flex justify-content-between align-items-center">
@@ -172,7 +172,7 @@ function Homepage() {
                     </div>
                 </div>
             </section>
-            <section className="py-5 main_comp_section4">
+            <section className="py-5 homepage_comp_section4">
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center s4-row-container">
                         <div className="col-12 col-sm-6 col-md-6 col-lg-6 s4-card-container">
