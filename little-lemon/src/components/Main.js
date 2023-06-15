@@ -39,6 +39,7 @@ function Main() {
 
     return (
         <Routes>
+            <Route path="/" element={<Homepage />} />
             <Route path="/homepage" element={<Homepage />} />
             <Route path="/reservations" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm}/>} />
             <Route path="/confirmed" element={<ConfirmedBooking />} />
